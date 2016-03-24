@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DragMaster</title>
+    <style>
+        .test {
+            width:500px;
+            height: 500px;
+            background:black;
+        }
+    </style>
+</head>
+<body ng-app="DragMasters">
+
+    <div ng-controller="GameCtrl">
+        <h1 can-drag="getInfo()">Drag me</h1>
+        <div class="test" dropzone="onDrop(value)"></div>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
